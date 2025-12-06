@@ -1,5 +1,12 @@
+import  './App.css'
+
 const App = () => {
-    return <h1>Krutoi file</h1>;
+    return(
+        <div className="App">
+                App Component
+            </div>
+    )
+    
 };
 
 export default App;
