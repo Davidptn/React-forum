@@ -1,15 +1,14 @@
 import { ReactNode } from "react"
-import styles from './mainModule.css'
+import styles from './main.module.css'
 
 interface MainProps {
-    children?: ReactNode
-    page:string
+    children: ReactNode
 }
 
-export const Main = ({children, page}:MainProps) => {
-    const {children} = props
-    
-    return <main>
-        {children}
-    </main>
+export function Main(props: MainProps) {
+    return (
+        <main className={styles.main}>
+            {props.children}
+        </main>
+    )
 }
